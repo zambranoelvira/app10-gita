@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+<!doctype html>
+<html>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<head>
+<meta charset="utf-8">
+<title>decima aplicacion movil</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sistemas_2.jpg','imagenes/artes_2.jpg','imagenes/psicologia_2.jpg','imagenes/programacion_2.jpg','imagenes/arte_2.1.jpg')">
+
+<div data-role="page" id="principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar"  data-back-btn-theme="b">
+   <h1>CARRERAS UNIVERSITARIAS</h1>
+  </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+        <div>
+        </div>
+        <div>
+        </div>
+      </div>
+   </div>
+      <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>1. Ingienería en Sistemas Computacionales.</h2>
+             <p>Muestra información sobre ofertas de estudio.</p>
+           </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>2. Artes Plásticas.</h2>
+             <p>Muestra información sobre ofertas de estudio.</p>
+           </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>3. Psicología.</h2>
+             <p>Muestra información sobre ofertas de estudio.</p>
+           </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Galería de la Carreras.</h2>
+             <p>Imagenes de todas las carreras.</p>
+           </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Galería de las Universidades.</h2>
+             <p>Imagenes de todas las unviversidades.</p>
+           </a>
+       </li>
+         </ul>
+           </div>
+           
+           <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="index2.html" target="_self" data-role="button" >
+    <h3>Creado por:</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+ </div>
+ 
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+       <div>
+         <img src="res/android/mdpi.png" width="46" height="46">
+       </div>
+       <div>
+         <h4>Aplicación Carreras Universitarias</h4>
+         <h4>Elvira Muñoz Zambrano</h4>
+       </div>
+     </div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Ingienería en Sistemas Computacionales</h1>
+       </div>
+       
+        <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+            <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Universidades.</h2>
+             <p>Universidades que ofrecen esta carrera.</p>
+           </a>
+       </li>
+      </ul>
+     </div>
+     
+       <div data-role="content" align="center">
+         <div>
+            <div data-role="collapsible" data-content-theme="false">
+             <h1>Imagen...</h1>
+             <div class="centro">
+               <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/sistemas_2.jpg',1)"><img src="imagenes/sitemas_1.jpg" width="250" height="170" id="Image2"></a></h3>
+               </div>
+           </div>
+           
+           <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.udlap.mx/ofertaacademica/planestudios.aspx?cveCarrera=lis" target="_self" data-role="button" >
+    <h3>Plan de estudios</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+</div>
+
+     <div data-role="collapsible" data-content-theme="false">
+             <h1>Perfil de egreso...</h1>
+             <div class="centro">
+               <h3><li>Diseñar, configurar y administrar redes computacionales aplicando las normas y estándares vigentes.
+<li>Desarrollar, implementar y administrar software de sistemas o de aplicación que cumpla con los estándares de calidad con el fin de apoyar la productividad y competitividad de las organizaciones.
+Coordinar y participar en proyectos interdisciplinarios.
+<li>Diseñar e implementar interfaces hombre-máquina y máquina-máquina para la automatización de sistemas.
+<li>Identificar y comprender las tecnologías de hardware para proponer, desarrollar y mantener aplicaciones eficientes.
+<li>Diseñar, desarrollar y administrar bases de datos conforme a requerimientos definidos, normas organizacionales de manejo y seguridad de la información, utilizando tecnologías emergentes.
+<li>Integrar soluciones computacionales con diferentes tecnologías, plataformas o dispositivos.
+<li>Desarrollar una visión empresarial para detectar áreas de oportunidad que le permitan emprender y desarrollar proyectos aplicando las tecnologías de la información y comunicación.
+<li>Desempeñar sus actividades profesionales considerando los aspectos legales, éticos, sociales y de desarrollo sustentable.
+<li>Poseer habilidades metodológicas de investigación que fortalezcan el desarrollo cultural, científico y tecnológico en el ámbito de sistemas computacionales y disciplinas afines.
+<li>Seleccionar y aplicar herramientas matemáticas para el modelado, diseño y desarrollo de tecnología computacional.</h3>
+               </div>
+           </div>
+           
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Artes Plásticas</h1>
+       </div>
+       
+        <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+            <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Universidades.</h2>
+             <p>Universidades que ofrecen esta carrera.</p>
+           </a>
+       </li>
+      </ul>
+     </div>
+       
+       <div data-role="content" align="center">
+         <div>
+           <div data-role="collapsible" data-content-theme="false">
+             <h1>Imagen...</h1>
+             <div class="centro">
+               <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/artes_2.jpg',1)"><img src="imagenes/artes_1.jpg" width="250" height="170" id="Image3"></a></h3>
+               </div>
+           </div>
+           
+           <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.udlap.mx/ofertaacademica/planestudios.aspx?cveCarrera=LAP" target="_self" data-role="button" >
+    <h3>Plan de estudios</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+</div>
+
+ <div data-role="collapsible" data-content-theme="false">
+             <h1>Perfil de egreso...</h1>
+             <div class="centro">
+               <h3><li>Repertorios de experimentación estratégica en el campo tridimensional y bidimensional de manera interdisciplinaria, para poder relacionar y organizar modelos significativos de representación en el área de las artes.
+
+<li>Destreza para conjugar múltiples elementos en un campo de argumentación dentro de las artes plásticas.
+
+<li>Habilidades creativas e innovadoras en el contexto de las artes plásticas.
+
+<li>Capacidad de análisis sobre los problemas conceptuales en la cultura del arte, de manera informada y con juicio en relación a tu entorno, teniendo en cuenta un sentido ético y armónico.
+
+<li>Conocimiento de las ventajas del trabajo colaborativo e interdisciplinario, además de los modelos teórico-metodológicos, para fundamentar tus conceptos y tu obra plástica.
+
+<li>Nociones técnicas para aplicarlas a tu carrera en la construcción de objetos artísticos tradicionales y en las nuevas tecnologías.
+</h3>
+               </div>
+           </div>
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Psicología</h1>
+       </div>
+       
+        <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+            <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Universidades.</h2>
+             <p>Universidades que ofrecen esta carrera.</p>
+           </a>
+       </li>
+      </ul>
+     </div>
+       
+       <div data-role="content" align="center">
+         <div>
+           <div data-role="collapsible" data-content-theme="false">
+             <h1>Imagen...</h1>
+             <div class="centro">
+               <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/psicologia_2.jpg',1)"><img src="imagenes/psicologia_1.jpg" width="250" height="170" id="Image4"></a></h3>
+             </div>
+           </div>
+           
+           <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.psicologia.buap.mx/docs/plandeestudiosw.pdf" target="_self" data-role="button" >
+    <h3>Plan de estudios</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+</div>
+
+<div data-role="collapsible" data-content-theme="false">
+             <h1>Perfil de egreso...</h1>
+             <div class="centro">
+               <h3>
+                 <li>El egresado de la licenciatura en Psicología, será un profesional competente para actividades de investigación, planeación, prevención e intervención en los ámbitos del comportamiento individual, los procesos cognitivos, afectivos y psicosociales, con base en los valores de honestidad, respeto, responsabilidad, servicio, capacidad profesional y confidencialidad; además, de ser capaz de responder prioritariamente a las necesidades y cambios sociales, tomar decisiones a partir de fundamentos precisos y adoptar una actitud.
+               </h3>
+               </div>
+           </div>
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Galería de las carreras</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+           <h3>Carreras</h3>
+           
+           <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/ingeneriaensistemas_1.jpg" alt="IngeneriaEnSistemas_1" title="IngeneriaEnSistemas_1" id="wows1_0"/></li>
+		<li><img src="data1/images/ingieneriaensistemas_2.jpg" alt="IngieneriaEnSistemas_2" title="IngieneriaEnSistemas_2" id="wows1_1"/></li>
+		<li><img src="data1/images/artesplasticas_1.jpg" alt="ArtesPlasticas_1" title="ArtesPlasticas_1" id="wows1_2"/></li>
+		<li><img src="data1/images/artesplasticas_2.jpg" alt="ArtesPlasticas_2" title="ArtesPlasticas_2" id="wows1_3"/></li>
+		<li><img src="data1/images/artesplasticas_3.jpg" alt="ArtesPlasticas_3" title="ArtesPlasticas_3" id="wows1_4"/></li>
+		<li><img src="data1/images/psicologia_1.1.jpg" alt="Psicologia_1.1" title="Psicologia_1.1" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/psicologia_2.1.jpg" alt="bootstrap carousel" title="Psicologia_2.1" id="wows1_6"/></a></li>
+		<li><img src="data1/images/psicologia_3.jpg" alt="Psicologia_3" title="Psicologia_3" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="IngeneriaEnSistemas_1"><span><img src="data1/tooltips/ingeneriaensistemas_1.jpg" alt="IngeneriaEnSistemas_1"/>1</span></a>
+		<a href="#" title="IngieneriaEnSistemas_2"><span><img src="data1/tooltips/ingieneriaensistemas_2.jpg" alt="IngieneriaEnSistemas_2"/>2</span></a>
+		<a href="#" title="ArtesPlasticas_1"><span><img src="data1/tooltips/artesplasticas_1.jpg" alt="ArtesPlasticas_1"/>3</span></a>
+		<a href="#" title="ArtesPlasticas_2"><span><img src="data1/tooltips/artesplasticas_2.jpg" alt="ArtesPlasticas_2"/>4</span></a>
+		<a href="#" title="ArtesPlasticas_3"><span><img src="data1/tooltips/artesplasticas_3.jpg" alt="ArtesPlasticas_3"/>5</span></a>
+		<a href="#" title="Psicologia_1.1"><span><img src="data1/tooltips/psicologia_1.1.jpg" alt="Psicologia_1.1"/>6</span></a>
+		<a href="#" title="Psicologia_2.1"><span><img src="data1/tooltips/psicologia_2.1.jpg" alt="Psicologia_2.1"/>7</span></a>
+		<a href="#" title="Psicologia_3"><span><img src="data1/tooltips/psicologia_3.jpg" alt="Psicologia_3"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Galerías de las Universidades</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+           <h3>Universidades</h3>
+           
+           <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/universida.jpg" alt="Universidad" title="Universidad" id="wows2_0"/></li>
+		<li><img src="data2/images/universida_udlap.jpg" alt="Universida_Udlap" title="Universida_Udlap" id="wows2_1"/></li>
+		<li><img src="data2/images/universidad_buap.jpg" alt="Universidad_Buap" title="Universidad_Buap" id="wows2_2"/></li>
+		<li><img src="data2/images/universidad_unarte.jpg" alt="Universidad_Unarte" title="Universidad_Unarte" id="wows2_3"/></li>
+		<li><img src="data2/images/universidad_unitec.jpg" alt="Universidad_Unitec" title="Universidad_Unitec" id="wows2_4"/></li>
+		<li><img src="data2/images/universidad_upaep.jpg" alt="Universidad_Upaep" title="Universidad_Upaep" id="wows2_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/universidad_uvm.jpg" alt="http://wowslider.net/" title="Universidad_Uvm" id="wows2_6"/></a></li>
+		<li><img src="data2/images/universidad_uvp.jpg" alt="Universidad_Uvp" title="Universidad_Uvp" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Universidad"><span><img src="data2/tooltips/universida.jpg" alt="Universidad"/>1</span></a>
+		<a href="#" title="Universida_Udlap"><span><img src="data2/tooltips/universida_udlap.jpg" alt="Universida_Udlap"/>2</span></a>
+		<a href="#" title="Universidad_Buap"><span><img src="data2/tooltips/universidad_buap.jpg" alt="Universidad_Buap"/>3</span></a>
+		<a href="#" title="Universidad_Unarte"><span><img src="data2/tooltips/universidad_unarte.jpg" alt="Universidad_Unarte"/>4</span></a>
+		<a href="#" title="Universidad_Unitec"><span><img src="data2/tooltips/universidad_unitec.jpg" alt="Universidad_Unitec"/>5</span></a>
+		<a href="#" title="Universidad_Upaep"><span><img src="data2/tooltips/universidad_upaep.jpg" alt="Universidad_Upaep"/>6</span></a>
+		<a href="#" title="Universidad_Uvm"><span><img src="data2/tooltips/universidad_uvm.jpg" alt="Universidad_Uvm"/>7</span></a>
+		<a href="#" title="Universidad_Uvp"><span><img src="data2/tooltips/universidad_uvp.jpg" alt="Universidad_Uvp"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Universidades</h1>
+       </div>
+  <div data-role="content" align="center">
+         <div>
+           <div data-role="collapsible" data-content-theme="false">
+             <h1>Imagen...</h1>
+             <div class="centro">
+               <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/programacion_2.jpg',1)"><img src="imagenes/programacion.jpg" width="250" height="170" id="Image12"></a></h3>
+             </div>
+           </div>
+           
+           <h3>
+             UPAEP</h3>
+           <p><img src="imagenes/universidadupaep_1.jpg" width="250" height="170"> </p>
+           <h3>UDLAP             </h3>
+           <p><img src="imagenes/udlap.png" width="250" height="170"></p>
+           <h3>UVP</h3>
+           <p><img src="imagenes/uvp.png" width="250" height="170"></p>
+           
+           <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.udlap.mx/inicio.aspx" target="_self" data-role="button" >
+    <h3>Ir a una...</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+</div>
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Universidades</h1>
+       </div>
+  <div data-role="content" align="center">
+         <div>
+           <div data-role="collapsible" data-content-theme="false">
+             <h1>Imagen...</h1>
+             <div class="centro">
+               <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/arte_2.1.jpg',1)"><img src="imagenes/arte.jpg" width="250" height="170" id="Image13"></a></h3>
+             </div>
+           </div>
+           
+           <h3>UNARTE </h3>
+           <p><img src="imagenes/unarte.png" width="250" height="170"></p>
+           <h3>UNITEC </h3>
+           <p><img src="imagenes/unitec.png" width="250" height="170"></p>
+           
+            <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.unarte.edu.mx/" target="_self" data-role="button" >
+    <h3>Ir a una...</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+</div>
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+     <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Universidades</h1>
+       </div>
+      
+      <div data-role="content" align="center">
+  <div data-role="content" align="center">
+         <div>
+           <div data-role="collapsible" data-content-theme="false">
+             <h1>Imagen...</h1>
+             <div class="centro">
+               <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/psicologia_2.jpg',1)"><img src="imagenes/psicologia.jpg" width="250" height="170" id="Image14"></a></h3>
+             </div>
+           </div>
+           
+           <h3>UVM </h3>
+           <h3><img src="imagenes/uvm.png" width="250" height="170"></h3>
+           <h3>BUAP </h3>
+           <p><img src="imagenes/buap.jpg" width="250" height="170"></p>
+           
+            <div data-role="main" class="ui-content" align="center">
+        <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.buap.mx/" target="_self" data-role="button" >
+    <h3>Ir a una...</h3>
+   </a>
+  </li>
+  </ul>
+ </div>
+</div>
+
+         </div>
+       </div>
+       <div data-role="footer" data-theme="b" data-position="fixed">
+         <h4>Carreras Universitarias</h4>
+       </div>
+     </div>
+     
+</body>
+</html>
